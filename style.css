@@ -148,6 +148,7 @@ img {
 .quick-features{
  background-color: #003679;
  padding: 20px 50px 20px 50px;
+ margin: -32px 0 0 0;
 
  
  }
@@ -415,8 +416,62 @@ height: auto;
   right: 0;
 }
 
+.text{
+  padding: 20px;
+  text-align:center;
+}
+.small-button{
+  margin-left: 25px; 
+  /*background-color: #003679; */
+  border: 1px solid #003679; 
+  color: #003679;
+
+}
+.small-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.small-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.small-button:hover span {
+  padding-right: 25px;
+}
+
+.small-button:hover span:after {
+  opacity: 1;
+  right: 0;
+  background-color: #fff;
+}
 
 
+/*img/emetric/workplacestars.jpg*/
+
+/*.jumbotron {
+  background: #222 url(img/emetric/workplacestars.jpg) center center no-repeat;
+  background: url(img/bg-img/add2.png);
+  background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}*/
+
+.jumbotron{
+    background: url("img/emetric/workplacestars.jpg") center center / cover no-repeat; 
+
+    background-size: 100% 100%;
+}
 
 
 /* :: 3.3.0 Section Padding */
